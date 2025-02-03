@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('bg.png') no-repeat center center fixed; /* Add background image */
+    background-size: cover; /* Make the image cover the whole screen */
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.qr-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qr-code {
+    flex: 1;
+    max-width: 400px;
+    height: 400px;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.details {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.details button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* General Footer Styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: transparent;
+    /* box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(145deg, #ececec, #c9c9c9); /* Light gray 3D base */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3), -6px -6px 10px rgba(255, 255, 255, 0.7);
+}
+
+.social-button.github {
+    background: linear-gradient(145deg, #333, #444);
+}
+
+.social-button.linkedin {
+    background: linear-gradient(145deg, #0077b5, #005f90);
+}
+
+.social-button.instagram {
+    background: linear-gradient(145deg, #e4405f, #c5294b);
+}
+
+.social-button.snapchat {
+    background: linear-gradient(145deg, #e4df40, #f5ed1c);
+}
+
+.social-button.portfolio {
+    background: linear-gradient(145deg, #ff8c00, #ff7300);
+}
+
+
+
+@media (max-width: 768px) {
+    .qr-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .qr-code, .details {
+        max-width: 100%;
+    }
+}

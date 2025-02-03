@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>QR Code Generator</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <section class="qr-section">
+                <!-- QR Code Display -->
+                <div class="qr-code" id="qrCode"></div>
+
+                <!-- Input and Controls -->
+                <div class="details">
+                    <input 
+                        type="text" 
+                        id="linkInput" 
+                        placeholder="Enter your link here"
+                    >
+                    <button id="generateBtn">Generate QR Code</button>
+                    <button id="downloadWithLogoBtn" hidden>Download with Logo</button>
+                    <button id="downloadWithoutLogoBtn" hidden>Download without Logo</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="social-links">
+                <a href="https://github.com/Priyanshu84iya" class="social-button github">GitHub</a>
+                <a href="https://www.linkedin.com/in/priyanshu-chaurasiya-8986a833b/" class="social-button linkedin">LinkedIn</a>
+                <a href="https://instagram.com/pry_uchiha" class="social-button instagram">Instagram</a>
+                <a href="https://www.snapchat.com/add/priyanshu_84iya" class="social-button snapchat">Snapchat</a>
+                <a href="https://priyanshu84iya.github.io/PriyanshuChaurasiya/" class="social-button portfolio">Portfolio</a>
+            </div>
+        </footer>          
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
